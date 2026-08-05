@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Quality Gate"
+  short_description: "Seleciona testes e valida evidências de qualidade"
+  default_prompt: "Use $motiva-quality-gate to execute this Motiva-Grass task under the project gates."

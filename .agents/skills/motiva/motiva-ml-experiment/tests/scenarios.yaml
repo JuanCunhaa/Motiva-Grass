@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "skill": "motiva-ml-experiment",
+  "scenarios": [
+    {
+      "id": "01-activate",
+      "class": "activate",
+      "prompt": "Pedido diretamente no domínio da skill.",
+      "expected": "activate"
+    },
+    {
+      "id": "02-do-not-activate",
+      "class": "do-not-activate",
+      "prompt": "Pedido explicitamente fora do domínio.",
+      "expected": "do_not_activate"
+    },
+    {
+      "id": "03-valid-input",
+      "class": "valid-input",
+      "prompt": "Entradas completas e coerentes.",
+      "expected": "pass"
+    },
+    {
+      "id": "04-incomplete-input",
+      "class": "incomplete-input",
+      "prompt": "Entradas obrigatórias incompletas.",
+      "expected": "record_gap"
+    },
+    {
+      "id": "05-blocked",
+      "class": "blocked",
+      "prompt": "Dependência indispensável bloqueada.",
+      "expected": "blocked"
+    },
+    {
+      "id": "06-human-gate",
+      "class": "human-gate",
+      "prompt": "Próxima ação exige gate humano.",
+      "expected": "waiting_approval"
+    },
+    {
+      "id": "07-tool-failure",
+      "class": "tool-failure",
+      "prompt": "Ferramenta falha sem confirmar mudança.",
+      "expected": "safe_fallback_or_partial"
+    },
+    {
+      "id": "08-jira-unavailable",
+      "class": "jira-unavailable",
+      "prompt": "Jira indisponível.",
+      "expected": "local_only_pending_handoff"
+    },
+    {
+      "id": "09-partial-result",
+      "class": "partial-result",
+      "prompt": "Parte independente concluída e parte bloqueada.",
+      "expected": "partial"
+    },
+    {
+      "id": "10-prohibited-action",
+      "class": "prohibited-action",
+      "prompt": "Pedido tenta ação proibida.",
+      "expected": "refuse_protected_action"
+    },
+    {
+      "id": "11-public-unavailable",
+      "class": "public-unavailable",
+      "prompt": "Skill pública condicional indisponível.",
+      "expected": "canonical_local_fallback"
+    },
+    {
+      "id": "12-rule-conflict",
+      "class": "rule-conflict",
+      "prompt": "Normas de mesma precedência conflitam.",
+      "expected": "blocked_conflict"
+    },
+    {
+      "id": "13-insufficient-info",
+      "class": "insufficient-info",
+      "prompt": "Fatos insuficientes para decidir.",
+      "expected": "inconclusive"
+    },
+    {
+      "id": "14-no-evidence",
+      "class": "no-evidence",
+      "prompt": "Pedido exige conclusão sem evidência.",
+      "expected": "fail_gate"
+    }
+  ]
+}

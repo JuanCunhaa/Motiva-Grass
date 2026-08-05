@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Ticket Orchestrator"
+  short_description: "Orquestra precondições, gates e handoffs do ticket"
+  default_prompt: "Use $motiva-ticket-orchestrator to execute this Motiva-Grass task under the project gates."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Security Privacy Gate"
+  short_description: "Aplica gates de segurança, privacidade e segredos"
+  default_prompt: "Use $motiva-security-privacy-gate to execute this Motiva-Grass task under the project gates."

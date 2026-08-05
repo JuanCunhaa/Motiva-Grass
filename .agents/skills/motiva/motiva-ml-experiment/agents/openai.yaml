@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva ML Experiment"
+  short_description: "Executa experimentos de ML reproduzíveis"
+  default_prompt: "Use $motiva-ml-experiment to execute this Motiva-Grass task under the project gates."

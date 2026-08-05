@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Dataset Governance"
+  short_description: "Governa proveniência, versão e splits de datasets"
+  default_prompt: "Use $motiva-dataset-governance to execute this Motiva-Grass task under the project gates."

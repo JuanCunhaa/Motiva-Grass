@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Architecture Guard"
+  short_description: "Protege arquitetura, contratos e decisões técnicas"
+  default_prompt: "Use $motiva-architecture-guard to execute this Motiva-Grass task under the project gates."

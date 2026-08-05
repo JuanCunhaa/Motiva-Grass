@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Repository Context"
+  short_description: "Mapeia contexto e normas canônicas do repositório"
+  default_prompt: "Use $motiva-repository-context to execute this Motiva-Grass task under the project gates."

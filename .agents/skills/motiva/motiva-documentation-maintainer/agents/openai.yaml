@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Documentation Maintainer"
+  short_description: "Mantém documentação canônica e rastreável"
+  default_prompt: "Use $motiva-documentation-maintainer to execute this Motiva-Grass task under the project gates."

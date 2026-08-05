@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "catalog": "config/skills/public-skills-catalog.yaml",
+  "skills": [
+    {
+      "id": "agent-skill-stack",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/agent-skill-stack"
+    },
+    {
+      "id": "acquire-codebase-knowledge",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/acquire-codebase-knowledge"
+    },
+    {
+      "id": "make-repo-contribution",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/make-repo-contribution"
+    },
+    {
+      "id": "create-specification",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/create-specification"
+    },
+    {
+      "id": "create-technical-spike",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/create-technical-spike"
+    },
+    {
+      "id": "agentic-eval",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/agentic-eval"
+    },
+    {
+      "id": "security-review",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/security-review"
+    },
+    {
+      "id": "secret-scanning",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/secret-scanning"
+    },
+    {
+      "id": "dependabot",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/dependabot"
+    },
+    {
+      "id": "playwright-explore-website",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/playwright-explore-website"
+    },
+    {
+      "id": "playwright-generate-test",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/playwright-generate-test"
+    },
+    {
+      "id": "quality-playbook",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/quality-playbook"
+    },
+    {
+      "id": "screen-recording",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/screen-recording"
+    },
+    {
+      "id": "next-best-practices",
+      "status": "DISABLED",
+      "vendor_path": null
+    },
+    {
+      "id": "next-cache-components",
+      "status": "DISABLED",
+      "vendor_path": null
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/vercel-agent-skills/vercel-react-best-practices"
+    },
+    {
+      "id": "web-design-guidelines",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/vercel-agent-skills/web-design-guidelines"
+    },
+    {
+      "id": "vercel-optimize",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/vercel-agent-skills/vercel-optimize"
+    },
+    {
+      "id": "audit-context-building",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/audit-context-building"
+    },
+    {
+      "id": "differential-review",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/differential-review"
+    },
+    {
+      "id": "property-based-testing",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/property-based-testing"
+    },
+    {
+      "id": "dimensional-analysis",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/dimensional-analysis"
+    },
+    {
+      "id": "sharp-edges",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/sharp-edges"
+    },
+    {
+      "id": "insecure-defaults",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/insecure-defaults"
+    },
+    {
+      "id": "supply-chain-risk-auditor",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/supply-chain-risk-auditor"
+    },
+    {
+      "id": "fp-check",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/fp-check"
+    },
+    {
+      "id": "variant-analysis",
+      "status": "APPROVED",
+      "vendor_path": "vendor/agent-skills/trailofbits/variant-analysis"
+    },
+    {
+      "id": "modern-python",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/trailofbits/modern-python"
+    },
+    {
+      "id": "mutation-testing",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/trailofbits/mutation-testing"
+    },
+    {
+      "id": "agentic-actions-auditor",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/trailofbits/agentic-actions-auditor"
+    },
+    {
+      "id": "semgrep-rule-creator",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/trailofbits/semgrep-rule-creator"
+    },
+    {
+      "id": "semgrep-rule-variant-creator",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/trailofbits/semgrep-rule-variant-creator"
+    },
+    {
+      "id": "second-opinion",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/trailofbits/second-opinion"
+    },
+    {
+      "id": "static-analysis",
+      "status": "NOT_FOUND",
+      "vendor_path": null
+    },
+    {
+      "id": "skill-improver",
+      "status": "DISABLED",
+      "vendor_path": null
+    },
+    {
+      "id": "hf-cli",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/huggingface/hf-cli"
+    },
+    {
+      "id": "huggingface-datasets",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-datasets"
+    },
+    {
+      "id": "huggingface-trackio",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-trackio"
+    },
+    {
+      "id": "huggingface-vision-trainer",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-vision-trainer"
+    },
+    {
+      "id": "hf-mem",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/huggingface/hf-mem"
+    },
+    {
+      "id": "huggingface-best",
+      "status": "APPROVED_WITH_RESTRICTIONS",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-best"
+    }
+  ]
+}

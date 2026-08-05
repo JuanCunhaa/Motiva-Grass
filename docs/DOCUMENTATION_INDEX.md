@@ -32,7 +32,9 @@ Este é o catálogo canônico. `PROJECT_RULEBOOK.md` define precedência; `docs/
 - [Versionamento de skills públicas](governance/PUBLIC_SKILLS_VERSIONING.md)
 - [Decisão de arquitetura de skills](governance/SKILL_ARCHITECTURE_DECISION.md)
 - [Matriz Jira × skills](governance/JIRA_SKILL_ROUTING_MATRIX.md)
-- [Relatório de mapeamento de skills](governance/SKILL_MAPPING_REPORT.md)
+- [Matriz de avaliação das skills](governance/SKILL_EVALUATION_MATRIX.md)
+- [Relatório final de implementação das skills](governance/SKILL_IMPLEMENTATION_REPORT.md)
+- [Relatório histórico de mapeamento público](governance/SKILL_MAPPING_REPORT.md)
 
 ## Desenvolvimento e arquitetura
 

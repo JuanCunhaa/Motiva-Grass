@@ -1,5 +1,7 @@
 # Relatório de conflitos e consolidação normativa
 
+> Atualização de 2026-08-05: as 16 skills próprias foram implementadas e validadas; o Jira recebeu somente o bloco MOTIVA-SKILLS. O texto abaixo preserva o diagnóstico anterior, enquanto `SKILL_ARCHITECTURE_DECISION.md` registra as resoluções vigentes.
+
 **Data da auditoria:** 2026-08-05  
 **Escopo:** documentação dos Prompts 1, 2 e 3 e tickets KAN-18 a KAN-156  
 **Natureza:** registro de resolução; não substitui as normas especializadas

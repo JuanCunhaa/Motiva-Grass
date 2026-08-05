@@ -1,5 +1,7 @@
 # Relatório final de mapeamento de Agent Skills
 
+> Registro histórico anterior à implementação das 16 skills próprias. Para o estado vigente, consulte `SKILL_IMPLEMENTATION_REPORT.md`, `SKILL_ARCHITECTURE_DECISION.md` e `config/skills/jira-skill-routing.yaml`.
+
 Data da análise: 2026-08-05. Escopo: KAN-1 a KAN-156, 41 skills públicas solicitadas, 16 skills próprias previstas e um wrapper local explícito. A auditoria foi estática: nenhum script público foi executado.
 
 ## 1. Resumo executivo

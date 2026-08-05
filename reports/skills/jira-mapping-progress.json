@@ -1,8 +1,665 @@
 {
-  "last_completed_ticket": "KAN-156",
+  "schema_version": 1,
+  "started_at": "2026-08-05T19:48:00-03:00",
+  "total": 156,
   "processed": 156,
-  "successful": 156,
-  "failed": 0,
   "pending": 0,
-  "failures": []
+  "failed": 0,
+  "batch_size": 10,
+  "authorized_fields": [
+    "description"
+  ],
+  "forbidden_fields": [
+    "summary",
+    "issuetype",
+    "status",
+    "priority",
+    "assignee",
+    "labels",
+    "parent",
+    "issuelinks",
+    "created",
+    "updated"
+  ],
+  "backup_sha256": "64c70f89be904094f4739eb39454535b81e0a5763f5c1be755082b416ef5aa1e",
+  "plan_sha256": "36cda18de39089d547c7deadd4e1bab415d7c5ce3ae7a756b05318bc77c88922",
+  "batches": [
+    {
+      "batch": 1,
+      "range": "KAN-1..KAN-10",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 2,
+      "range": "KAN-11..KAN-20",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 3,
+      "range": "KAN-21..KAN-30",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 4,
+      "range": "KAN-31..KAN-40",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 5,
+      "range": "KAN-41..KAN-50",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 6,
+      "range": "KAN-51..KAN-60",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 7,
+      "range": "KAN-61..KAN-70",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 8,
+      "range": "KAN-71..KAN-80",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 9,
+      "range": "KAN-81..KAN-90",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization",
+      "concurrent_drift": [
+        "KAN-89 labels"
+      ]
+    },
+    {
+      "batch": 10,
+      "range": "KAN-91..KAN-100",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 11,
+      "range": "KAN-101..KAN-110",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 12,
+      "range": "KAN-111..KAN-120",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 13,
+      "range": "KAN-121..KAN-130",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 14,
+      "range": "KAN-131..KAN-140",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 15,
+      "range": "KAN-141..KAN-150",
+      "updated": 10,
+      "verified": 10,
+      "normalization": "Jira Markdown canonicalization"
+    },
+    {
+      "batch": 16,
+      "range": "KAN-151..KAN-156",
+      "updated": 6,
+      "verified": 6,
+      "normalization": "Jira Markdown canonicalization"
+    }
+  ],
+  "tickets": {
+    "KAN-1": {
+      "status": "VERIFIED"
+    },
+    "KAN-2": {
+      "status": "VERIFIED"
+    },
+    "KAN-3": {
+      "status": "VERIFIED"
+    },
+    "KAN-4": {
+      "status": "VERIFIED"
+    },
+    "KAN-5": {
+      "status": "VERIFIED"
+    },
+    "KAN-6": {
+      "status": "VERIFIED"
+    },
+    "KAN-7": {
+      "status": "VERIFIED"
+    },
+    "KAN-8": {
+      "status": "VERIFIED"
+    },
+    "KAN-9": {
+      "status": "VERIFIED"
+    },
+    "KAN-10": {
+      "status": "VERIFIED"
+    },
+    "KAN-11": {
+      "status": "VERIFIED"
+    },
+    "KAN-12": {
+      "status": "VERIFIED"
+    },
+    "KAN-13": {
+      "status": "VERIFIED"
+    },
+    "KAN-14": {
+      "status": "VERIFIED"
+    },
+    "KAN-15": {
+      "status": "VERIFIED"
+    },
+    "KAN-16": {
+      "status": "VERIFIED"
+    },
+    "KAN-17": {
+      "status": "VERIFIED"
+    },
+    "KAN-18": {
+      "status": "VERIFIED"
+    },
+    "KAN-19": {
+      "status": "VERIFIED"
+    },
+    "KAN-20": {
+      "status": "VERIFIED_WITH_CONCURRENT_DRIFT"
+    },
+    "KAN-21": {
+      "status": "VERIFIED"
+    },
+    "KAN-22": {
+      "status": "VERIFIED"
+    },
+    "KAN-23": {
+      "status": "VERIFIED"
+    },
+    "KAN-24": {
+      "status": "VERIFIED"
+    },
+    "KAN-25": {
+      "status": "VERIFIED"
+    },
+    "KAN-26": {
+      "status": "VERIFIED"
+    },
+    "KAN-27": {
+      "status": "VERIFIED"
+    },
+    "KAN-28": {
+      "status": "VERIFIED"
+    },
+    "KAN-29": {
+      "status": "VERIFIED"
+    },
+    "KAN-30": {
+      "status": "VERIFIED"
+    },
+    "KAN-31": {
+      "status": "VERIFIED"
+    },
+    "KAN-32": {
+      "status": "VERIFIED"
+    },
+    "KAN-33": {
+      "status": "VERIFIED"
+    },
+    "KAN-34": {
+      "status": "VERIFIED"
+    },
+    "KAN-35": {
+      "status": "VERIFIED"
+    },
+    "KAN-36": {
+      "status": "VERIFIED"
+    },
+    "KAN-37": {
+      "status": "VERIFIED"
+    },
+    "KAN-38": {
+      "status": "VERIFIED"
+    },
+    "KAN-39": {
+      "status": "VERIFIED"
+    },
+    "KAN-40": {
+      "status": "VERIFIED"
+    },
+    "KAN-41": {
+      "status": "VERIFIED"
+    },
+    "KAN-42": {
+      "status": "VERIFIED"
+    },
+    "KAN-43": {
+      "status": "VERIFIED"
+    },
+    "KAN-44": {
+      "status": "VERIFIED"
+    },
+    "KAN-45": {
+      "status": "VERIFIED"
+    },
+    "KAN-46": {
+      "status": "VERIFIED"
+    },
+    "KAN-47": {
+      "status": "VERIFIED"
+    },
+    "KAN-48": {
+      "status": "VERIFIED"
+    },
+    "KAN-49": {
+      "status": "VERIFIED"
+    },
+    "KAN-50": {
+      "status": "VERIFIED"
+    },
+    "KAN-51": {
+      "status": "VERIFIED"
+    },
+    "KAN-52": {
+      "status": "VERIFIED"
+    },
+    "KAN-53": {
+      "status": "VERIFIED"
+    },
+    "KAN-54": {
+      "status": "VERIFIED"
+    },
+    "KAN-55": {
+      "status": "VERIFIED"
+    },
+    "KAN-56": {
+      "status": "VERIFIED"
+    },
+    "KAN-57": {
+      "status": "VERIFIED"
+    },
+    "KAN-58": {
+      "status": "VERIFIED"
+    },
+    "KAN-59": {
+      "status": "VERIFIED"
+    },
+    "KAN-60": {
+      "status": "VERIFIED"
+    },
+    "KAN-61": {
+      "status": "VERIFIED"
+    },
+    "KAN-62": {
+      "status": "VERIFIED"
+    },
+    "KAN-63": {
+      "status": "VERIFIED"
+    },
+    "KAN-64": {
+      "status": "VERIFIED"
+    },
+    "KAN-65": {
+      "status": "VERIFIED"
+    },
+    "KAN-66": {
+      "status": "VERIFIED"
+    },
+    "KAN-67": {
+      "status": "VERIFIED"
+    },
+    "KAN-68": {
+      "status": "VERIFIED"
+    },
+    "KAN-69": {
+      "status": "VERIFIED"
+    },
+    "KAN-70": {
+      "status": "VERIFIED"
+    },
+    "KAN-71": {
+      "status": "VERIFIED"
+    },
+    "KAN-72": {
+      "status": "VERIFIED"
+    },
+    "KAN-73": {
+      "status": "VERIFIED"
+    },
+    "KAN-74": {
+      "status": "VERIFIED"
+    },
+    "KAN-75": {
+      "status": "VERIFIED"
+    },
+    "KAN-76": {
+      "status": "VERIFIED"
+    },
+    "KAN-77": {
+      "status": "VERIFIED"
+    },
+    "KAN-78": {
+      "status": "VERIFIED"
+    },
+    "KAN-79": {
+      "status": "VERIFIED"
+    },
+    "KAN-80": {
+      "status": "VERIFIED"
+    },
+    "KAN-81": {
+      "status": "VERIFIED"
+    },
+    "KAN-82": {
+      "status": "VERIFIED"
+    },
+    "KAN-83": {
+      "status": "VERIFIED"
+    },
+    "KAN-84": {
+      "status": "VERIFIED"
+    },
+    "KAN-85": {
+      "status": "VERIFIED"
+    },
+    "KAN-86": {
+      "status": "VERIFIED"
+    },
+    "KAN-87": {
+      "status": "VERIFIED"
+    },
+    "KAN-88": {
+      "status": "VERIFIED"
+    },
+    "KAN-89": {
+      "status": "VERIFIED_WITH_CONCURRENT_DRIFT_AND_RESTORE"
+    },
+    "KAN-90": {
+      "status": "VERIFIED"
+    },
+    "KAN-91": {
+      "status": "VERIFIED"
+    },
+    "KAN-92": {
+      "status": "VERIFIED"
+    },
+    "KAN-93": {
+      "status": "VERIFIED"
+    },
+    "KAN-94": {
+      "status": "VERIFIED"
+    },
+    "KAN-95": {
+      "status": "VERIFIED"
+    },
+    "KAN-96": {
+      "status": "VERIFIED"
+    },
+    "KAN-97": {
+      "status": "VERIFIED"
+    },
+    "KAN-98": {
+      "status": "VERIFIED"
+    },
+    "KAN-99": {
+      "status": "VERIFIED"
+    },
+    "KAN-100": {
+      "status": "VERIFIED"
+    },
+    "KAN-101": {
+      "status": "VERIFIED"
+    },
+    "KAN-102": {
+      "status": "VERIFIED"
+    },
+    "KAN-103": {
+      "status": "VERIFIED"
+    },
+    "KAN-104": {
+      "status": "VERIFIED"
+    },
+    "KAN-105": {
+      "status": "VERIFIED"
+    },
+    "KAN-106": {
+      "status": "VERIFIED"
+    },
+    "KAN-107": {
+      "status": "VERIFIED"
+    },
+    "KAN-108": {
+      "status": "VERIFIED"
+    },
+    "KAN-109": {
+      "status": "VERIFIED"
+    },
+    "KAN-110": {
+      "status": "VERIFIED"
+    },
+    "KAN-111": {
+      "status": "VERIFIED"
+    },
+    "KAN-112": {
+      "status": "VERIFIED"
+    },
+    "KAN-113": {
+      "status": "VERIFIED"
+    },
+    "KAN-114": {
+      "status": "VERIFIED"
+    },
+    "KAN-115": {
+      "status": "VERIFIED"
+    },
+    "KAN-116": {
+      "status": "VERIFIED"
+    },
+    "KAN-117": {
+      "status": "VERIFIED"
+    },
+    "KAN-118": {
+      "status": "VERIFIED"
+    },
+    "KAN-119": {
+      "status": "VERIFIED"
+    },
+    "KAN-120": {
+      "status": "VERIFIED"
+    },
+    "KAN-121": {
+      "status": "VERIFIED"
+    },
+    "KAN-122": {
+      "status": "VERIFIED"
+    },
+    "KAN-123": {
+      "status": "VERIFIED"
+    },
+    "KAN-124": {
+      "status": "VERIFIED"
+    },
+    "KAN-125": {
+      "status": "VERIFIED"
+    },
+    "KAN-126": {
+      "status": "VERIFIED"
+    },
+    "KAN-127": {
+      "status": "VERIFIED"
+    },
+    "KAN-128": {
+      "status": "VERIFIED"
+    },
+    "KAN-129": {
+      "status": "VERIFIED"
+    },
+    "KAN-130": {
+      "status": "VERIFIED"
+    },
+    "KAN-131": {
+      "status": "VERIFIED"
+    },
+    "KAN-132": {
+      "status": "VERIFIED"
+    },
+    "KAN-133": {
+      "status": "VERIFIED"
+    },
+    "KAN-134": {
+      "status": "VERIFIED"
+    },
+    "KAN-135": {
+      "status": "VERIFIED"
+    },
+    "KAN-136": {
+      "status": "VERIFIED"
+    },
+    "KAN-137": {
+      "status": "VERIFIED"
+    },
+    "KAN-138": {
+      "status": "VERIFIED"
+    },
+    "KAN-139": {
+      "status": "VERIFIED"
+    },
+    "KAN-140": {
+      "status": "VERIFIED"
+    },
+    "KAN-141": {
+      "status": "VERIFIED"
+    },
+    "KAN-142": {
+      "status": "VERIFIED"
+    },
+    "KAN-143": {
+      "status": "VERIFIED"
+    },
+    "KAN-144": {
+      "status": "VERIFIED"
+    },
+    "KAN-145": {
+      "status": "VERIFIED"
+    },
+    "KAN-146": {
+      "status": "VERIFIED"
+    },
+    "KAN-147": {
+      "status": "VERIFIED"
+    },
+    "KAN-148": {
+      "status": "VERIFIED"
+    },
+    "KAN-149": {
+      "status": "VERIFIED"
+    },
+    "KAN-150": {
+      "status": "VERIFIED"
+    },
+    "KAN-151": {
+      "status": "VERIFIED"
+    },
+    "KAN-152": {
+      "status": "VERIFIED"
+    },
+    "KAN-153": {
+      "status": "VERIFIED"
+    },
+    "KAN-154": {
+      "status": "VERIFIED"
+    },
+    "KAN-155": {
+      "status": "VERIFIED"
+    },
+    "KAN-156": {
+      "status": "VERIFIED"
+    }
+  },
+  "concurrent_drift": [
+    {
+      "key": "KAN-20",
+      "fields": [
+        "description-outside",
+        "labels"
+      ],
+      "timestamp": "2026-08-05T19:53:47.749-0300",
+      "action": "preserved"
+    },
+    {
+      "key": "KAN-89",
+      "fields": [
+        "description-outside",
+        "labels"
+      ],
+      "timestamp": "2026-08-05T19:53:03.977-0300",
+      "action": "outside restored from changelog; labels preserved"
+    }
+  ],
+  "completed_at": "2026-08-05T20:05:00-03:00",
+  "final_audit": {
+    "ticket_count": 156,
+    "markers_valid": 156,
+    "outside_preserved_or_concurrent_restored": 156,
+    "no_planned": 156,
+    "no_invalid_or_blocked_skills": 156,
+    "no_duplicates": 156,
+    "unauthorized_field_changes_by_skill_mapping_operation": 0,
+    "concurrent_drifts_preserved": [
+      {
+        "key": "KAN-20",
+        "field": "description-outside",
+        "preserved": true
+      },
+      {
+        "key": "KAN-20",
+        "field": "labels",
+        "preserved": true
+      },
+      {
+        "key": "KAN-89",
+        "field": "description-outside",
+        "preserved": true
+      },
+      {
+        "key": "KAN-89",
+        "field": "labels",
+        "preserved": true
+      }
+    ]
+  }
 }
