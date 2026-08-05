@@ -92,6 +92,13 @@ Este é o catálogo canônico. `PROJECT_RULEBOOK.md` define precedência; `docs/
 
 Use [templates documentais](DOCUMENT_TEMPLATES.md). Data Cards e Model Cards usam exclusivamente os templates canônicos listados acima. Novas áreas (`product/`, `api/`, `computer-vision/`, `operations/` e `release/`) devem ser catalogadas aqui quando receberem documentos oficiais.
 
+### Prompts operacionais
+
+- [Executar ticket](prompt/execute.md)
+- [Revisar e finalizar ticket](prompt/revisao.md)
+- [Corrigir findings](prompt/correcao.md)
+- [Retomar ticket bloqueado](prompt/bloqueado.md)
+
 ## Documentos históricos ou de apoio
 
 - [Estrutura documental proposta no Prompt 2](DOCUMENTATION_STRUCTURE.md) — referência arquitetural; esta página e a política atual prevalecem em matéria normativa.
