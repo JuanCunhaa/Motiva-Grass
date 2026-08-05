@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "default_activation": "conditional",
+  "allowed_audit_statuses": ["APPROVED", "APPROVED_WITH_RESTRICTIONS"],
+  "blocked_audit_statuses": ["DISABLED", "REJECTED", "NOT_FOUND"],
+  "rules": {
+    "vendor_immutable": true,
+    "network_disabled_during_activation": true,
+    "copy_on_windows": true,
+    "max_primary_skills_per_ticket": 7,
+    "max_conditional_skills_per_ticket": 4,
+    "max_total_skills_per_ticket": 12,
+    "no_push_or_merge": true,
+    "no_production_or_paid_resources": true,
+    "no_external_code_or_data_transfer_without_human_gate": true,
+    "no_public_skill_execution_before_static_audit": true
+  },
+  "precedence": [
+    "security-policy",
+    "PROJECT_RULEBOOK.md",
+    "motiva-own-skill",
+    "AGENTS.md",
+    "canonical-project-documentation",
+    "public-skill"
+  ]
+}

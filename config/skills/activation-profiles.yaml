@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "governance": {"public_required": ["make-repo-contribution", "create-specification"], "public_conditional": ["agentic-eval"]},
+    "architecture": {"public_required": ["acquire-codebase-knowledge", "create-specification"], "public_conditional": ["audit-context-building", "create-technical-spike", "differential-review", "sharp-edges"]},
+    "frontend": {"public_required": ["make-repo-contribution"], "public_conditional": ["vercel-react-best-practices", "playwright-generate-test", "security-review", "screen-recording"]},
+    "frontend-design": {"own_conditional": ["motiva-web-guidelines-snapshot"], "public_required": ["make-repo-contribution"], "public_conditional": ["vercel-react-best-practices", "playwright-explore-website", "screen-recording"]},
+    "api": {"public_required": ["modern-python", "security-review"], "public_conditional": ["property-based-testing", "insecure-defaults", "fp-check"]},
+    "contracts": {"public_required": ["create-specification", "property-based-testing"], "public_conditional": ["dimensional-analysis", "security-review"]},
+    "python": {"public_required": ["modern-python"], "public_conditional": ["property-based-testing", "mutation-testing"]},
+    "data": {"public_required": ["modern-python"], "public_conditional": ["property-based-testing", "dimensional-analysis", "huggingface-datasets"]},
+    "physical-data": {"public_required": ["create-specification", "dimensional-analysis"], "public_conditional": ["modern-python", "property-based-testing"]},
+    "computer-vision": {"public_required": ["modern-python", "dimensional-analysis"], "public_conditional": ["property-based-testing", "audit-context-building", "differential-review", "sharp-edges"]},
+    "geometry": {"public_required": ["modern-python", "dimensional-analysis", "property-based-testing"], "public_conditional": ["audit-context-building", "differential-review", "sharp-edges"]},
+    "ml-research": {"public_required": ["create-technical-spike"], "public_conditional": ["huggingface-best", "agentic-eval", "second-opinion"]},
+    "ml-training": {"public_required": ["modern-python"], "public_conditional": ["huggingface-vision-trainer", "huggingface-trackio", "hf-mem", "huggingface-datasets"]},
+    "ml-evaluation": {"public_required": ["modern-python", "property-based-testing"], "public_conditional": ["dimensional-analysis", "huggingface-trackio", "agentic-eval"]},
+    "model-release": {"public_required": ["supply-chain-risk-auditor", "security-review"], "public_conditional": ["hf-cli", "huggingface-best"]},
+    "security": {"public_required": ["security-review", "insecure-defaults"], "public_conditional": ["fp-check", "variant-analysis", "semgrep-rule-creator", "semgrep-rule-variant-creator"]},
+    "devsecops": {"public_required": ["secret-scanning", "supply-chain-risk-auditor"], "public_conditional": ["dependabot", "agentic-actions-auditor", "fp-check", "variant-analysis"]},
+    "testing": {"public_required": ["property-based-testing"], "public_conditional": ["mutation-testing", "agentic-eval", "quality-playbook"]},
+    "qa": {"public_required": ["agentic-eval"], "public_conditional": ["playwright-explore-website", "playwright-generate-test", "quality-playbook", "screen-recording"]},
+    "performance": {"public_required": ["agentic-eval"], "public_conditional": ["vercel-optimize", "quality-playbook", "hf-mem"]},
+    "documentation": {"public_required": ["create-specification", "make-repo-contribution"], "public_conditional": ["agentic-eval"]},
+    "bug": {"public_required": ["differential-review"], "public_conditional": ["property-based-testing", "security-review", "playwright-explore-website"]},
+    "infrastructure": {"public_required": ["security-review", "supply-chain-risk-auditor"], "public_conditional": ["insecure-defaults", "agentic-actions-auditor"]},
+    "release": {"public_required": ["quality-playbook", "security-review"], "public_conditional": ["screen-recording", "differential-review", "agentic-eval"]}
+  }
+}

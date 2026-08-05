@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "lockfile": "config/skills/skills-lock.yaml",
+  "catalog": "config/skills/public-skills-catalog.yaml",
+  "routing": "config/skills/jira-skill-routing.yaml",
+  "public_skill_count": 41,
+  "own_skill_count": 17
+}
