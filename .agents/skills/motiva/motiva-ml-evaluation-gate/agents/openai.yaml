@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva ML Evaluation Gate"
+  short_description: "Avalia modelos com métricas e gates explícitos"
+  default_prompt: "Use $motiva-ml-evaluation-gate to execute this Motiva-Grass task under the project gates."

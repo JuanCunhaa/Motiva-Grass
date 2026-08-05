@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Physical Data Gate"
+  short_description: "Controla gates de coleta e medição física"
+  default_prompt: "Use $motiva-physical-data-gate to execute this Motiva-Grass task under the project gates."

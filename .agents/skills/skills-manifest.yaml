@@ -1,8 +1,113 @@
 {
-  "schema_version": 1,
-  "lockfile": "config/skills/skills-lock.yaml",
-  "catalog": "config/skills/public-skills-catalog.yaml",
+  "schema_version": 2,
+  "generated_at": "2026-08-05T12:00:00-03:00",
+  "public_catalog": "config/skills/public-skills-catalog.yaml",
   "routing": "config/skills/jira-skill-routing.yaml",
   "public_skill_count": 41,
-  "own_skill_count": 17
+  "first_party_skill_count": 16,
+  "wrapper_skill_count": 1,
+  "first_party": [
+    {
+      "id": "motiva-work-selector",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-work-selector"
+    },
+    {
+      "id": "motiva-jira-ticket-executor",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-jira-ticket-executor"
+    },
+    {
+      "id": "motiva-ticket-orchestrator",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-ticket-orchestrator"
+    },
+    {
+      "id": "motiva-repository-context",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-repository-context"
+    },
+    {
+      "id": "motiva-architecture-guard",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-architecture-guard"
+    },
+    {
+      "id": "motiva-dataset-governance",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-dataset-governance"
+    },
+    {
+      "id": "motiva-physical-data-gate",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-physical-data-gate"
+    },
+    {
+      "id": "motiva-inference-contract",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-inference-contract"
+    },
+    {
+      "id": "motiva-ml-experiment",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-ml-experiment"
+    },
+    {
+      "id": "motiva-ml-evaluation-gate",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-ml-evaluation-gate"
+    },
+    {
+      "id": "motiva-model-release-gate",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-model-release-gate"
+    },
+    {
+      "id": "motiva-design-system-guardian",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-design-system-guardian"
+    },
+    {
+      "id": "motiva-security-privacy-gate",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-security-privacy-gate"
+    },
+    {
+      "id": "motiva-quality-gate",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-quality-gate"
+    },
+    {
+      "id": "motiva-documentation-maintainer",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-documentation-maintainer"
+    },
+    {
+      "id": "motiva-release-manager",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-release-manager"
+    },
+    {
+      "id": "motiva-web-guidelines-snapshot",
+      "version": "1.0.0",
+      "status": "VALIDATED",
+      "path": ".agents/skills/motiva/motiva-web-guidelines-snapshot"
+    }
+  ]
 }

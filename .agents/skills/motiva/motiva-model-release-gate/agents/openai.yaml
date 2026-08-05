@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Model Release Gate"
+  short_description: "Controla promoção, rollback e monitoramento de modelo"
+  default_prompt: "Use $motiva-model-release-gate to execute this Motiva-Grass task under the project gates."

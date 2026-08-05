@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Design System Guardian"
+  short_description: "Protege design system, UX e acessibilidade"
+  default_prompt: "Use $motiva-design-system-guardian to execute this Motiva-Grass task under the project gates."

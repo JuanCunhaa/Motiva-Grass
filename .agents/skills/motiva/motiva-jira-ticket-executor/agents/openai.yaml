@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Jira Ticket Executor"
+  short_description: "Executa tickets Jira com rastreabilidade e evidências"
+  default_prompt: "Use $motiva-jira-ticket-executor to execute this Motiva-Grass task under the project gates."

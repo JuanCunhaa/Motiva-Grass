@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Release Manager"
+  short_description: "Coordena release candidate e decisão GO ou NO-GO"
+  default_prompt: "Use $motiva-release-manager to execute this Motiva-Grass task under the project gates."

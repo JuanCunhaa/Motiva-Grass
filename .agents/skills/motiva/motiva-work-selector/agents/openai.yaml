@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Work Selector"
+  short_description: "Seleciona o próximo trabalho executável do roadmap"
+  default_prompt: "Use $motiva-work-selector to execute this Motiva-Grass task under the project gates."

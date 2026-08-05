@@ -1,29 +1,407 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "profiles": {
-    "governance": {"public_required": ["make-repo-contribution", "create-specification"], "public_conditional": ["agentic-eval"]},
-    "architecture": {"public_required": ["acquire-codebase-knowledge", "create-specification"], "public_conditional": ["audit-context-building", "create-technical-spike", "differential-review", "sharp-edges"]},
-    "frontend": {"public_required": ["make-repo-contribution"], "public_conditional": ["vercel-react-best-practices", "playwright-generate-test", "security-review", "screen-recording"]},
-    "frontend-design": {"own_conditional": ["motiva-web-guidelines-snapshot"], "public_required": ["make-repo-contribution"], "public_conditional": ["vercel-react-best-practices", "playwright-explore-website", "screen-recording"]},
-    "api": {"public_required": ["modern-python", "security-review"], "public_conditional": ["property-based-testing", "insecure-defaults", "fp-check"]},
-    "contracts": {"public_required": ["create-specification", "property-based-testing"], "public_conditional": ["dimensional-analysis", "security-review"]},
-    "python": {"public_required": ["modern-python"], "public_conditional": ["property-based-testing", "mutation-testing"]},
-    "data": {"public_required": ["modern-python"], "public_conditional": ["property-based-testing", "dimensional-analysis", "huggingface-datasets"]},
-    "physical-data": {"public_required": ["create-specification", "dimensional-analysis"], "public_conditional": ["modern-python", "property-based-testing"]},
-    "computer-vision": {"public_required": ["modern-python", "dimensional-analysis"], "public_conditional": ["property-based-testing", "audit-context-building", "differential-review", "sharp-edges"]},
-    "geometry": {"public_required": ["modern-python", "dimensional-analysis", "property-based-testing"], "public_conditional": ["audit-context-building", "differential-review", "sharp-edges"]},
-    "ml-research": {"public_required": ["create-technical-spike"], "public_conditional": ["huggingface-best", "agentic-eval", "second-opinion"]},
-    "ml-training": {"public_required": ["modern-python"], "public_conditional": ["huggingface-vision-trainer", "huggingface-trackio", "hf-mem", "huggingface-datasets"]},
-    "ml-evaluation": {"public_required": ["modern-python", "property-based-testing"], "public_conditional": ["dimensional-analysis", "huggingface-trackio", "agentic-eval"]},
-    "model-release": {"public_required": ["supply-chain-risk-auditor", "security-review"], "public_conditional": ["hf-cli", "huggingface-best"]},
-    "security": {"public_required": ["security-review", "insecure-defaults"], "public_conditional": ["fp-check", "variant-analysis", "semgrep-rule-creator", "semgrep-rule-variant-creator"]},
-    "devsecops": {"public_required": ["secret-scanning", "supply-chain-risk-auditor"], "public_conditional": ["dependabot", "agentic-actions-auditor", "fp-check", "variant-analysis"]},
-    "testing": {"public_required": ["property-based-testing"], "public_conditional": ["mutation-testing", "agentic-eval", "quality-playbook"]},
-    "qa": {"public_required": ["agentic-eval"], "public_conditional": ["playwright-explore-website", "playwright-generate-test", "quality-playbook", "screen-recording"]},
-    "performance": {"public_required": ["agentic-eval"], "public_conditional": ["vercel-optimize", "quality-playbook", "hf-mem"]},
-    "documentation": {"public_required": ["create-specification", "make-repo-contribution"], "public_conditional": ["agentic-eval"]},
-    "bug": {"public_required": ["differential-review"], "public_conditional": ["property-based-testing", "security-review", "playwright-explore-website"]},
-    "infrastructure": {"public_required": ["security-review", "supply-chain-risk-auditor"], "public_conditional": ["insecure-defaults", "agentic-actions-auditor"]},
-    "release": {"public_required": ["quality-playbook", "security-review"], "public_conditional": ["screen-recording", "differential-review", "agentic-eval"]}
+    "governance": {
+      "public_required": [
+        "make-repo-contribution",
+        "create-specification"
+      ],
+      "public_conditional": [
+        "agentic-eval"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-work-selector",
+        "motiva-documentation-maintainer"
+      ]
+    },
+    "architecture": {
+      "public_required": [
+        "acquire-codebase-knowledge",
+        "create-specification"
+      ],
+      "public_conditional": [
+        "audit-context-building",
+        "create-technical-spike",
+        "differential-review",
+        "sharp-edges"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-repository-context",
+        "motiva-architecture-guard",
+        "motiva-documentation-maintainer"
+      ]
+    },
+    "frontend": {
+      "public_required": [
+        "make-repo-contribution"
+      ],
+      "public_conditional": [
+        "vercel-react-best-practices",
+        "playwright-generate-test",
+        "security-review",
+        "screen-recording"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-design-system-guardian",
+        "motiva-quality-gate"
+      ]
+    },
+    "frontend-design": {
+      "own_conditional": [
+        "motiva-web-guidelines-snapshot"
+      ],
+      "public_required": [
+        "make-repo-contribution"
+      ],
+      "public_conditional": [
+        "vercel-react-best-practices",
+        "playwright-explore-website",
+        "screen-recording"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-design-system-guardian",
+        "motiva-quality-gate"
+      ]
+    },
+    "api": {
+      "public_required": [
+        "modern-python",
+        "security-review"
+      ],
+      "public_conditional": [
+        "property-based-testing",
+        "insecure-defaults",
+        "fp-check"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-architecture-guard",
+        "motiva-security-privacy-gate",
+        "motiva-quality-gate"
+      ]
+    },
+    "contracts": {
+      "public_required": [
+        "create-specification",
+        "property-based-testing"
+      ],
+      "public_conditional": [
+        "dimensional-analysis",
+        "security-review"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-architecture-guard",
+        "motiva-inference-contract",
+        "motiva-quality-gate"
+      ]
+    },
+    "python": {
+      "public_required": [
+        "modern-python"
+      ],
+      "public_conditional": [
+        "property-based-testing",
+        "mutation-testing"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-quality-gate"
+      ]
+    },
+    "data": {
+      "public_required": [
+        "modern-python"
+      ],
+      "public_conditional": [
+        "property-based-testing",
+        "dimensional-analysis",
+        "huggingface-datasets"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-dataset-governance",
+        "motiva-quality-gate"
+      ]
+    },
+    "physical-data": {
+      "public_required": [
+        "create-specification",
+        "dimensional-analysis"
+      ],
+      "public_conditional": [
+        "modern-python",
+        "property-based-testing"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-physical-data-gate",
+        "motiva-dataset-governance",
+        "motiva-quality-gate"
+      ]
+    },
+    "computer-vision": {
+      "public_required": [
+        "modern-python",
+        "dimensional-analysis"
+      ],
+      "public_conditional": [
+        "property-based-testing",
+        "audit-context-building",
+        "differential-review",
+        "sharp-edges"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-inference-contract",
+        "motiva-quality-gate"
+      ]
+    },
+    "geometry": {
+      "public_required": [
+        "modern-python",
+        "dimensional-analysis",
+        "property-based-testing"
+      ],
+      "public_conditional": [
+        "audit-context-building",
+        "differential-review",
+        "sharp-edges"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-inference-contract",
+        "motiva-quality-gate"
+      ]
+    },
+    "ml-research": {
+      "public_required": [
+        "create-technical-spike"
+      ],
+      "public_conditional": [
+        "huggingface-best",
+        "agentic-eval",
+        "second-opinion"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-ml-experiment",
+        "motiva-documentation-maintainer"
+      ]
+    },
+    "ml-training": {
+      "public_required": [
+        "modern-python"
+      ],
+      "public_conditional": [
+        "huggingface-vision-trainer",
+        "huggingface-trackio",
+        "hf-mem",
+        "huggingface-datasets"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-ml-experiment",
+        "motiva-dataset-governance",
+        "motiva-quality-gate"
+      ]
+    },
+    "ml-evaluation": {
+      "public_required": [
+        "modern-python",
+        "property-based-testing"
+      ],
+      "public_conditional": [
+        "dimensional-analysis",
+        "huggingface-trackio",
+        "agentic-eval"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-ml-evaluation-gate",
+        "motiva-quality-gate"
+      ]
+    },
+    "model-release": {
+      "public_required": [
+        "supply-chain-risk-auditor",
+        "security-review"
+      ],
+      "public_conditional": [
+        "hf-cli",
+        "huggingface-best"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-model-release-gate",
+        "motiva-security-privacy-gate"
+      ]
+    },
+    "security": {
+      "public_required": [
+        "security-review",
+        "insecure-defaults"
+      ],
+      "public_conditional": [
+        "fp-check",
+        "variant-analysis",
+        "semgrep-rule-creator",
+        "semgrep-rule-variant-creator"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-security-privacy-gate",
+        "motiva-quality-gate"
+      ]
+    },
+    "devsecops": {
+      "public_required": [
+        "secret-scanning",
+        "supply-chain-risk-auditor"
+      ],
+      "public_conditional": [
+        "dependabot",
+        "agentic-actions-auditor",
+        "fp-check",
+        "variant-analysis"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-security-privacy-gate",
+        "motiva-quality-gate"
+      ]
+    },
+    "testing": {
+      "public_required": [
+        "property-based-testing"
+      ],
+      "public_conditional": [
+        "mutation-testing",
+        "agentic-eval",
+        "quality-playbook"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-quality-gate"
+      ]
+    },
+    "qa": {
+      "public_required": [
+        "agentic-eval"
+      ],
+      "public_conditional": [
+        "playwright-explore-website",
+        "playwright-generate-test",
+        "quality-playbook",
+        "screen-recording"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-quality-gate"
+      ]
+    },
+    "performance": {
+      "public_required": [
+        "agentic-eval"
+      ],
+      "public_conditional": [
+        "vercel-optimize",
+        "quality-playbook",
+        "hf-mem"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-quality-gate"
+      ]
+    },
+    "documentation": {
+      "public_required": [
+        "create-specification",
+        "make-repo-contribution"
+      ],
+      "public_conditional": [
+        "agentic-eval"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-documentation-maintainer"
+      ]
+    },
+    "bug": {
+      "public_required": [
+        "differential-review"
+      ],
+      "public_conditional": [
+        "property-based-testing",
+        "security-review",
+        "playwright-explore-website"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-quality-gate"
+      ]
+    },
+    "infrastructure": {
+      "public_required": [
+        "security-review",
+        "supply-chain-risk-auditor"
+      ],
+      "public_conditional": [
+        "insecure-defaults",
+        "agentic-actions-auditor"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-repository-context",
+        "motiva-architecture-guard",
+        "motiva-security-privacy-gate",
+        "motiva-quality-gate"
+      ]
+    },
+    "release": {
+      "public_required": [
+        "quality-playbook",
+        "security-review"
+      ],
+      "public_conditional": [
+        "screen-recording",
+        "differential-review",
+        "agentic-eval"
+      ],
+      "own_required": [
+        "motiva-jira-ticket-executor",
+        "motiva-ticket-orchestrator",
+        "motiva-release-manager",
+        "motiva-quality-gate",
+        "motiva-documentation-maintainer"
+      ]
+    }
   }
 }

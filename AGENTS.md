@@ -74,3 +74,11 @@ Sem `gate-human`, decisões técnicas reversíveis dentro do ticket podem avanç
 - Interrompa em conflito normativo, acesso indispensável ausente, risco não aceito ou ação irreversível sem autoridade.
 - `NO-GO` só conclui quando produzir essa decisão é o objetivo aceito.
 - Done exige critérios, testes, documentação, evidências, revisão, rastreabilidade e estado Jira coerente.
+
+## Agent Skills
+
+- Skills próprias ficam em `.agents/skills/motiva/`; catálogo, manifesto e roteamento ficam em `.agents/skills/` e `config/skills/`.
+- Comece por `motiva-jira-ticket-executor` e `motiva-ticket-orchestrator`; ative públicas somente quando auditadas e sua condição estiver comprovada.
+- Skills próprias e normas canônicas prevalecem sobre vendor; use `motiva-web-guidelines-snapshot` no lugar da diretriz web ao vivo.
+- Pare diante de skill bloqueada/inexistente, conflito normativo ou gate humano; não simule substituição.
+- Done exige skills validadas, testes/evidências e bloco Jira único entre `MOTIVA-SKILLS:INÍCIO` e `MOTIVA-SKILLS:FIM`.

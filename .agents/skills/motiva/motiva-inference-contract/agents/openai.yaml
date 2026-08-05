@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Inference Contract"
+  short_description: "Valida contratos e limites da inferência visual"
+  default_prompt: "Use $motiva-inference-contract to execute this Motiva-Grass task under the project gates."
