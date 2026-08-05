@@ -12,7 +12,7 @@ Data da análise: 2026-08-05. Escopo: KAN-1 a KAN-156, 41 skills públicas solic
 - Foi criado o wrapper local `motiva-web-guidelines-snapshot`, com snapshot, licença e proveniência próprios.
 - KAN-1 a KAN-156 foram atualizados e relidos; 156/156 têm uma única seção de skills, 139/139 executáveis têm mapeamento detalhado e nenhuma descrição original foi perdida.
 - Todos os itens permanecem em `Tarefas pendentes`. Títulos, prioridades, responsáveis, labels, links, flags e workflow não foram alterados.
-- O repositório Git foi confirmado e a entrega foi versionada na branch `chore/KAN-1-agent-skills-catalog`, com commits semânticos locais. Push direto e abertura de PR não foram executados.
+- O repositório Git foi confirmado, a branch `chore/KAN-1-agent-skills-catalog` foi publicada e o PR [#89](https://github.com/JuanCunhaa/Motiva-Grass/pull/89) foi aberto contra `main` com commits semânticos.
 
 ## 2. Fontes utilizadas
 
@@ -116,7 +116,7 @@ Resultados: 15 `APPROVED`, 22 `APPROVED_WITH_RESTRICTIONS`, 3 `DISABLED`, 1 `NOT
 - `skill-improver` depende de `plugin-dev/skill-reviewer` ausente e prevê hooks automatizados de edição/revisão.
 - Skills externas podem mudar comportamento upstream; por isso o update gera diff e exige nova auditoria, sem substituir automaticamente o vendor atual.
 - As 16 skills próprias ainda são contratos planejados; até serem implementadas, as normas canônicas precisam ser aplicadas diretamente.
-- A branch e os commits locais existem, mas ainda precisam ser publicados pelo fluxo aprovado para permitir revisão em PR.
+- O PR #89 ainda depende dos checks e da revisão aplicáveis antes de qualquer merge; este trabalho não antecipa aprovação nem conclusão de KAN-1.
 
 ## 10. Matriz por Épico
 
@@ -177,7 +177,7 @@ Nenhum. O checkpoint final registra 156 sucessos, 0 falhas e 0 pendências. Não
 - Falta uma decisão humana de licença para as duas skills Next históricas.
 - Falta decidir se `static-analysis` deve ser renomeada para uma filha específica ou removida do catálogo esperado.
 - Falta disponibilizar/revisar a dependência de `skill-improver`, caso essa automação continue desejada.
-- Falta publicar a branch e abrir o PR pelo fluxo aprovado; push direto permaneceu fora do escopo seguro.
+- O PR #89 está aberto; checks, revisão e merge permanecem como gates normais do repositório.
 
 ## 16. Skills mais utilizadas
 
@@ -249,7 +249,7 @@ Públicas sem associação: `agent-skill-stack`, `mutation-testing`, `web-design
 3. Manter `vendor` imutável e usar wrappers/adapters locais para regras Motiva.
 4. Ativar somente por perfil ou ticket; nunca copiar todas as skills para o runtime.
 5. Resolver as quatro exceções sem substituições implícitas: licença Next, seletor `static-analysis` e dependência/hooks de `skill-improver`.
-6. Publicar a branch e abrir o PR pelo fluxo aprovado, preservando os commits locais e checks registrados.
+6. Revisar o PR #89, executar os checks aplicáveis e somente fazer merge após aprovação.
 
 ## 19. Gates humanos
 
@@ -258,11 +258,11 @@ Públicas sem associação: `agent-skill-stack`, `mutation-testing`, `web-design
 - Automação: aprovar dependência e comportamento de edição/revisão antes de habilitar `skill-improver`.
 - Rede/custo/produção: aplicar gates já presentes nos tickets antes de uploads, publicação, GPU/Job pagos, recursos Vercel, configurações de repositório ou acesso a produção.
 - Dados e ML: preservar gates de licença, dados reais restritos, medição física, promoção de modelo e release definidos nos tickets.
-- Git remoto: publicação da branch e abertura do PR devem seguir o fluxo aprovado; não realizar push direto.
+- Git remoto: revisão, checks e merge do PR #89 continuam sujeitos aos gates do repositório.
 
 ## 20. Próximos passos
 
-1. Publicar `chore/KAN-1-agent-skills-catalog` e abrir o PR `[KAN-1] versionar e mapear Agent Skills` pelo fluxo aprovado.
+1. Revisar o PR #89 (`[KAN-1] versionar e mapear Agent Skills`) e acompanhar seus checks.
 2. Revisar e decidir as quatro entradas não roteáveis.
 3. Criar tickets separados para as 16 skills próprias, começando pelas quatro transversais.
 4. Executar `verify-public-skills.py` em CI e antes de qualquer ativação.
@@ -277,12 +277,13 @@ Públicas sem associação: `agent-skill-stack`, `mutation-testing`, `web-design
 | Tickets de segurança/DevSecOps | `static-analysis` não existe como skill raiz | Nenhuma análise estática genérica foi roteada | Escolher e auditar explicitamente `codeql`, `sarif-parsing` ou `semgrep`, se aplicável |
 | Governança de skills | `skill-improver` depende de componente ausente e hooks automatizados | Skill desativada | Revisar dependência, escopo e autorização de automação |
 | Todos os tickets | 16 skills próprias não existiam | Contratos locais permanecem `planned` | Implementar e validar em tickets separados; aplicar normas diretamente até lá |
-| Handoff Git | Branch e commits existem apenas localmente | Revisão remota e PR ainda indisponíveis | Publicar a branch e abrir PR pelo fluxo aprovado; não usar push direto |
 
-### Versionamento local
+### Versionamento Git
 
 | Commit | Mensagem |
 |---|---|
 | `0fc23f0a7a332f2e041e9a3f03e0323dfb47afaf` | `chore(skills): vendor audited public catalog [KAN-1]` |
 | `a43b141e6777e2208d1bdb412857b185cfe31803` | `feat(skills): add governance automation [KAN-1]` |
-| commit final desta entrega | `docs(skills): map Jira skill routing [KAN-1]` |
+| `2954bd990b941aea867294b3db8e0b37ee3615fa` | `docs(skills): map Jira skill routing [KAN-1]` |
+
+Branch publicada: `chore/KAN-1-agent-skills-catalog`. Pull Request: [#89](https://github.com/JuanCunhaa/Motiva-Grass/pull/89).
