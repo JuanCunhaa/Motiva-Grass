@@ -35,6 +35,7 @@ Este é o catálogo canônico. `PROJECT_RULEBOOK.md` define precedência; `docs/
 - [Matriz de avaliação das skills](governance/SKILL_EVALUATION_MATRIX.md)
 - [Relatório final de implementação das skills](governance/SKILL_IMPLEMENTATION_REPORT.md)
 - [Relatório histórico de mapeamento público](governance/SKILL_MAPPING_REPORT.md)
+- [Registro factual do bootstrap do repositório](governance/REPOSITORY_BOOTSTRAP_RECORD.md)
 
 ## Desenvolvimento e arquitetura
 

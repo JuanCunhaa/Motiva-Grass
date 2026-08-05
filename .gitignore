@@ -1,3 +1,46 @@
-# Python bytecode and interpreter caches
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python
 __pycache__/
 *.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript and generated application output
+node_modules/
+coverage/
+dist/
+build/
+.next/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local logs and temporary files
+.tmp/
+tmp/
+*.log
+
+# Real data and model artifacts stay outside Git
+data/raw/
+data/processed/
+datasets/
+artifacts/
+models/
+checkpoints/
+*.ckpt
+*.onnx
+*.pt
+*.pth
