@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-08-05T06:00:51.057935+00:00",
+  "lockfile": "config\\skills\\skills-lock.yaml",
+  "checked_vendored_skills": 37,
+  "passed": true,
+  "failures": []
+}

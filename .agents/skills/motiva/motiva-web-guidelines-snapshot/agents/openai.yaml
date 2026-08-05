@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motiva Web Guidelines Snapshot"
+  short_description: "Audit UI against pinned web guidelines"
+  default_prompt: "Use $motiva-web-guidelines-snapshot to audit this UI against the pinned Motiva web guidelines."

@@ -1,0 +1,890 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-08-05T06:00:50.028657+00:00",
+  "method": "static-only",
+  "public_scripts_executed": false,
+  "counts": {
+    "APPROVED_WITH_RESTRICTIONS": 22,
+    "APPROVED": 15,
+    "DISABLED": 3,
+    "NOT_FOUND": 1
+  },
+  "skills": [
+    {
+      "id": "agent-skill-stack",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 2,
+        "secrets": 15,
+        "git_mutation": 0,
+        "destructive": 1,
+        "external_action": 11
+      },
+      "executables": [
+        "scripts/inventory_skills.py",
+        "scripts/project_profile.py",
+        "scripts/render_stack_card.py",
+        "scripts/skill_index.py",
+        "scripts/stage_install.py"
+      ],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Do not execute installation/staging scripts without explicit approval.",
+        "Restrict deletion to a validated staging directory."
+      ]
+    },
+    {
+      "id": "acquire-codebase-knowledge",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 1,
+        "secrets": 7,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 10
+      },
+      "executables": [
+        "scripts/scan.py"
+      ],
+      "risk": "HIGH",
+      "audit_status": "APPROVED",
+      "restrictions": []
+    },
+    {
+      "id": "make-repo-contribution",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 1,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": []
+    },
+    {
+      "id": "create-specification",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": []
+    },
+    {
+      "id": "create-technical-spike",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": []
+    },
+    {
+      "id": "agentic-eval",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": []
+    },
+    {
+      "id": "security-review",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 7,
+        "secrets": 46,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 7
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED",
+      "restrictions": []
+    },
+    {
+      "id": "secret-scanning",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 3,
+        "secrets": 138,
+        "git_mutation": 9,
+        "destructive": 0,
+        "external_action": 7
+      },
+      "executables": [],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Do not change repository settings or push protection without the current ticket and authorization."
+      ]
+    },
+    {
+      "id": "dependabot",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 10,
+        "secrets": 5,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 16
+      },
+      "executables": [],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Network and repository configuration changes require the current dependency-governance ticket."
+      ]
+    },
+    {
+      "id": "playwright-explore-website",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Use only against an authorized local, preview, or test target.",
+        "Do not enter secrets or mutate production data."
+      ]
+    },
+    {
+      "id": "playwright-generate-test",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Use only against an authorized local, preview, or test target.",
+        "Do not enter secrets or mutate production data."
+      ]
+    },
+    {
+      "id": "quality-playbook",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 9,
+        "secrets": 26,
+        "git_mutation": 4,
+        "destructive": 3,
+        "external_action": 14
+      },
+      "executables": [
+        "quality_gate.py"
+      ],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Run only for a scoped large audit after preserving user changes.",
+        "Do not use git clean or destructive recovery commands automatically."
+      ]
+    },
+    {
+      "id": "screen-recording",
+      "source": "github-awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "signals": {
+        "network": 0,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Capture only authorized windows and sanitized test data.",
+        "Review recordings for private or sensitive content before storage."
+      ]
+    },
+    {
+      "id": "next-best-practices",
+      "source": "vercel-next-skills",
+      "commit": "dc1de9caf7612d73f56a8dec3cb1bd6c9ec096b9",
+      "license": "UNIDENTIFIED",
+      "signals": {},
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "DISABLED",
+      "restrictions": [
+        "No license file or license declaration was found in the pinned historical commit.",
+        "Do not route until a human records a valid license decision.",
+        "Upstream removed or split these skills; validate an alternative separately."
+      ]
+    },
+    {
+      "id": "next-cache-components",
+      "source": "vercel-next-skills",
+      "commit": "dc1de9caf7612d73f56a8dec3cb1bd6c9ec096b9",
+      "license": "UNIDENTIFIED",
+      "signals": {},
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "DISABLED",
+      "restrictions": [
+        "No license file or license declaration was found in the pinned historical commit.",
+        "Do not route until a human records a valid license decision.",
+        "Upstream removed or split these skills; validate an alternative separately."
+      ]
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "source": "vercel-agent-skills",
+      "commit": "7c180d9044c9ae2b442b567aad4e42a28dd5ed62",
+      "license": "MIT",
+      "signals": {
+        "network": 137,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 2
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only when the ticket confirms the relevant Vercel/React context.",
+        "Do not create paid resources, change billing, or access production without a human gate."
+      ]
+    },
+    {
+      "id": "web-design-guidelines",
+      "source": "vercel-agent-skills",
+      "commit": "7c180d9044c9ae2b442b567aad4e42a28dd5ed62",
+      "license": "MIT",
+      "signals": {
+        "network": 1,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only when the ticket confirms the relevant Vercel/React context.",
+        "Do not create paid resources, change billing, or access production without a human gate."
+      ]
+    },
+    {
+      "id": "vercel-optimize",
+      "source": "vercel-agent-skills",
+      "commit": "7c180d9044c9ae2b442b567aad4e42a28dd5ed62",
+      "license": "MIT",
+      "signals": {
+        "network": 339,
+        "secrets": 76,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 147
+      },
+      "executables": [
+        "lib/auth-route.mjs",
+        "lib/budget-summary.mjs",
+        "lib/citations.mjs",
+        "lib/cost-coverage.mjs",
+        "lib/dedup-recs.mjs",
+        "lib/deep-dive.mjs",
+        "lib/display-labels.mjs",
+        "lib/extract-claims.mjs",
+        "lib/framework-support.mjs",
+        "lib/gates/build-minutes-fanout.mjs",
+        "lib/gates/cold-start.mjs",
+        "lib/gates/contract.mjs",
+        "lib/gates/cwv-poor.mjs",
+        "lib/gates/external-api-slow.mjs",
+        "lib/gates/hard-gates.mjs",
+        "lib/gates/index.mjs",
+        "lib/gates/isr-overrevalidation.mjs",
+        "lib/gates/middleware-heavy.mjs",
+        "lib/gates/observability-events-attribution.mjs",
+        "lib/gates/platform-bot-protection.mjs",
+        "lib/gates/platform-fluid-compute.mjs",
+        "lib/gates/region-misconfig.mjs",
+        "lib/gates/route-errors.mjs",
+        "lib/gates/scanner-driven.mjs",
+        "lib/gates/select-candidates.mjs",
+        "lib/gates/slow-route.mjs",
+        "lib/gates/types.d.ts",
+        "lib/gates/uncached-route.mjs",
+        "lib/gates/usage-spike-triage.mjs",
+        "lib/grade-recommendation.mjs",
+        "lib/impact-label.mjs",
+        "lib/impact-magnitude.mjs",
+        "lib/investigation-brief.mjs",
+        "lib/observation-safety.mjs",
+        "lib/project-facts.mjs",
+        "lib/queries.mjs",
+        "lib/reconcile-candidates.mjs",
+        "lib/render-report.mjs",
+        "lib/repo-root.mjs",
+        "lib/route-normalize.mjs",
+        "lib/sanitizers/bot-protection-certainty.mjs",
+        "lib/sanitizers/cache-tag-invalidation-certainty.mjs",
+        "lib/sanitizers/count-correct.mjs",
+        "lib/sanitizers/function-duration-invocations.mjs",
+        "lib/sanitizers/index.mjs",
+        "lib/sanitizers/middleware-conflict.mjs",
+        "lib/sanitizers/missing-citation.mjs",
+        "lib/sanitizers/pre-release.mjs",
+        "lib/sanitizers/rate-limit.mjs",
+        "lib/sanitizers/rendering-mode-mislabel.mjs",
+        "lib/sanitizers/undeclared-dep.mjs",
+        "lib/sanitizers/vercel-directive-strip.mjs",
+        "lib/sanitizers/window-units.mjs",
+        "lib/scanners/cache-components-suspense-dedupe.mjs",
+        "lib/scanners/edge-heavy-import.mjs",
+        "lib/scanners/force-dynamic.mjs",
+        "lib/scanners/headers-in-page.mjs",
+        "lib/scanners/index.mjs",
+        "lib/scanners/large-static-asset.mjs",
+        "lib/scanners/max-age-without-s-maxage.mjs",
+        "lib/scanners/middleware-broad-matcher.mjs",
+        "lib/scanners/missing-cache-headers.mjs",
+        "lib/scanners/prisma-include-tree.mjs",
+        "lib/scanners/region-pin-in-config.mjs",
+        "lib/scanners/source-maps-production.mjs",
+        "lib/scanners/sveltekit-prerender-missing.mjs",
+        "lib/scanners/turbo-force-bypass.mjs",
+        "lib/scanners/unoptimized-image.mjs",
+        "lib/scanners/use-cache-date-stamp.mjs",
+        "lib/support-topics.mjs",
+        "lib/throttle.mjs",
+        "lib/util.mjs",
+        "lib/vercel.mjs",
+        "lib/verify-claim.mjs",
+        "lib/workspace-resolver.mjs",
+        "scripts/budget-summary.mjs",
+        "scripts/build-docs.mjs",
+        "scripts/check-citations.mjs",
+        "scripts/check-docs-fresh.mjs",
+        "scripts/collect-signals.mjs",
+        "scripts/collect-sub-agent-outputs.mjs",
+        "scripts/deep-dive.mjs",
+        "scripts/gate-investigations.mjs",
+        "scripts/merge-signals.mjs",
+        "scripts/prepare-investigation-brief.mjs",
+        "scripts/reconcile-candidates.mjs",
+        "scripts/render-report.mjs",
+        "scripts/scan-codebase.mjs",
+        "scripts/verify-and-regen.mjs",
+        "scripts/verify-finding.mjs"
+      ],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only when the ticket confirms the relevant Vercel/React context.",
+        "Do not create paid resources, change billing, or access production without a human gate."
+      ]
+    },
+    {
+      "id": "audit-context-building",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 13,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "differential-review",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 4,
+        "git_mutation": 1,
+        "destructive": 0,
+        "external_action": 4
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "property-based-testing",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 6,
+        "secrets": 2,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "dimensional-analysis",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 49,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "sharp-edges",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 6,
+        "secrets": 28,
+        "git_mutation": 0,
+        "destructive": 6,
+        "external_action": 3
+      },
+      "executables": [],
+      "risk": "HIGH",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "insecure-defaults",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 2,
+        "secrets": 44,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 17
+      },
+      "executables": [],
+      "risk": "HIGH",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "supply-chain-risk-auditor",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "fp-check",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 1,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 2
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "variant-analysis",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "modern-python",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 60,
+        "secrets": 9,
+        "git_mutation": 0,
+        "destructive": 1,
+        "external_action": 11
+      },
+      "executables": [],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Package installation and network access require an explicit ticket step.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "mutation-testing",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 1,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Run only after the base suite is stable and compute budget is appropriate.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "agentic-actions-auditor",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 11,
+        "secrets": 16,
+        "git_mutation": 3,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Use only for authorized GitHub Actions workflows; never expose secrets.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "semgrep-rule-creator",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 8,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 2
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for the rule-authoring purpose named by the skill.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "semgrep-rule-variant-creator",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 7,
+        "secrets": 0,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for the rule-authoring purpose named by the skill.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "second-opinion",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {
+        "network": 6,
+        "secrets": 1,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "External model or CLI use requires explicit authorization and a non-sensitive code scope.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "static-analysis",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {},
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "NOT_FOUND",
+      "restrictions": [
+        "The selector is a plugin containing codeql, sarif-parsing, and semgrep; no root SKILL.md or frontmatter name static-analysis exists.",
+        "Do not substitute a child skill without human validation."
+      ]
+    },
+    {
+      "id": "skill-improver",
+      "source": "trailofbits",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "signals": {},
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "DISABLED",
+      "restrictions": [
+        "Requires the unavailable plugin-dev/skill-reviewer dependency.",
+        "Automated edit/review hooks are not permitted in ordinary ticket execution."
+      ]
+    },
+    {
+      "id": "hf-cli",
+      "source": "huggingface",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "signals": {
+        "network": 5,
+        "secrets": 19,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 9
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-datasets",
+      "source": "huggingface",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "signals": {
+        "network": 8,
+        "secrets": 1,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 8
+      },
+      "executables": [],
+      "risk": "MEDIUM",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-trackio",
+      "source": "huggingface",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "signals": {
+        "network": 6,
+        "secrets": 1,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-vision-trainer",
+      "source": "huggingface",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "signals": {
+        "network": 51,
+        "secrets": 45,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 26
+      },
+      "executables": [
+        "scripts/dataset_inspector.py",
+        "scripts/estimate_cost.py",
+        "scripts/image_classification_training.py",
+        "scripts/object_detection_training.py",
+        "scripts/sam_segmentation_training.py"
+      ],
+      "risk": "HIGH",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "hf-mem",
+      "source": "huggingface",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "signals": {
+        "network": 0,
+        "secrets": 1,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-best",
+      "source": "huggingface",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "signals": {
+        "network": 11,
+        "secrets": 3,
+        "git_mutation": 0,
+        "destructive": 0,
+        "external_action": 0
+      },
+      "executables": [],
+      "risk": "LOW",
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    }
+  ]
+}

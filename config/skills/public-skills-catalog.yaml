@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-05T00:00:00-03:00",
+  "generated_by": "Codex",
+  "expected_public_skills": 41,
+  "sources": {
+    "github-awesome-copilot": {
+      "repository": "github/awesome-copilot",
+      "commit": "940cf68164ea8a44d2e4d7cd9ce24c76eee56ed0",
+      "license": "MIT",
+      "license_evidence": "LICENSE",
+      "vendor_root": "vendor/agent-skills/github-awesome-copilot"
+    },
+    "vercel-next-skills": {
+      "repository": "vercel-labs/next-skills",
+      "commit": "dc1de9caf7612d73f56a8dec3cb1bd6c9ec096b9",
+      "head_observed": "b76d687cf3e026eac3b1032f610f06b47a56377c",
+      "license": "UNIDENTIFIED",
+      "license_evidence": null,
+      "vendor_root": null,
+      "upstream_note": "The requested skills were removed after this historical commit and moved/split into vercel/next.js."
+    },
+    "vercel-agent-skills": {
+      "repository": "vercel-labs/agent-skills",
+      "commit": "7c180d9044c9ae2b442b567aad4e42a28dd5ed62",
+      "license": "MIT",
+      "license_evidence": "README.md#license",
+      "vendor_root": "vendor/agent-skills/vercel-agent-skills"
+    },
+    "trailofbits": {
+      "repository": "trailofbits/skills",
+      "commit": "9ea55c598763f7cb87ab56933d773d7dc34344a0",
+      "license": "CC-BY-SA-4.0",
+      "license_evidence": "LICENSE",
+      "vendor_root": "vendor/agent-skills/trailofbits"
+    },
+    "huggingface": {
+      "repository": "huggingface/skills",
+      "commit": "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda",
+      "license": "Apache-2.0",
+      "license_evidence": "LICENSE",
+      "vendor_root": "vendor/agent-skills/huggingface"
+    },
+    "web-interface-guidelines-snapshot": {
+      "repository": "vercel-labs/web-interface-guidelines",
+      "commit": "4e799d45c17aec1498c269287a83b9dba22b966b",
+      "license": "MIT",
+      "license_evidence": "LICENSE",
+      "vendor_root": null
+    }
+  },
+  "skills": [
+    {
+      "id": "agent-skill-stack",
+      "public_name": "agent-skill-stack",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/agent-skill-stack",
+      "selector": "agent-skill-stack",
+      "frontmatter_name": "agent-skill-stack",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/agent-skill-stack",
+      "restrictions": [
+        "Do not execute installation/staging scripts without explicit approval.",
+        "Restrict deletion to a validated staging directory."
+      ]
+    },
+    {
+      "id": "acquire-codebase-knowledge",
+      "public_name": "acquire-codebase-knowledge",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/acquire-codebase-knowledge",
+      "selector": "acquire-codebase-knowledge",
+      "frontmatter_name": "acquire-codebase-knowledge",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/acquire-codebase-knowledge",
+      "restrictions": []
+    },
+    {
+      "id": "make-repo-contribution",
+      "public_name": "make-repo-contribution",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/make-repo-contribution",
+      "selector": "make-repo-contribution",
+      "frontmatter_name": "make-repo-contribution",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/make-repo-contribution",
+      "restrictions": []
+    },
+    {
+      "id": "create-specification",
+      "public_name": "create-specification",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/create-specification",
+      "selector": "create-specification",
+      "frontmatter_name": "create-specification",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/create-specification",
+      "restrictions": []
+    },
+    {
+      "id": "create-technical-spike",
+      "public_name": "create-technical-spike",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/create-technical-spike",
+      "selector": "create-technical-spike",
+      "frontmatter_name": "create-technical-spike",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/create-technical-spike",
+      "restrictions": []
+    },
+    {
+      "id": "agentic-eval",
+      "public_name": "agentic-eval",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/agentic-eval",
+      "selector": "agentic-eval",
+      "frontmatter_name": "agentic-eval",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/agentic-eval",
+      "restrictions": []
+    },
+    {
+      "id": "security-review",
+      "public_name": "security-review",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/security-review",
+      "selector": "security-review",
+      "frontmatter_name": "security-review",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/security-review",
+      "restrictions": []
+    },
+    {
+      "id": "secret-scanning",
+      "public_name": "secret-scanning",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/secret-scanning",
+      "selector": "secret-scanning",
+      "frontmatter_name": "secret-scanning",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/secret-scanning",
+      "restrictions": [
+        "Do not change repository settings or push protection without the current ticket and authorization."
+      ]
+    },
+    {
+      "id": "dependabot",
+      "public_name": "dependabot",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/dependabot",
+      "selector": "dependabot",
+      "frontmatter_name": "dependabot",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/dependabot",
+      "restrictions": [
+        "Network and repository configuration changes require the current dependency-governance ticket."
+      ]
+    },
+    {
+      "id": "playwright-explore-website",
+      "public_name": "playwright-explore-website",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/playwright-explore-website",
+      "selector": "playwright-explore-website",
+      "frontmatter_name": "playwright-explore-website",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/playwright-explore-website",
+      "restrictions": [
+        "Use only against an authorized local, preview, or test target.",
+        "Do not enter secrets or mutate production data."
+      ]
+    },
+    {
+      "id": "playwright-generate-test",
+      "public_name": "playwright-generate-test",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/playwright-generate-test",
+      "selector": "playwright-generate-test",
+      "frontmatter_name": "playwright-generate-test",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/playwright-generate-test",
+      "restrictions": [
+        "Use only against an authorized local, preview, or test target.",
+        "Do not enter secrets or mutate production data."
+      ]
+    },
+    {
+      "id": "quality-playbook",
+      "public_name": "quality-playbook",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/quality-playbook",
+      "selector": "quality-playbook",
+      "frontmatter_name": "quality-playbook",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/quality-playbook",
+      "restrictions": [
+        "Run only for a scoped large audit after preserving user changes.",
+        "Do not use git clean or destructive recovery commands automatically."
+      ]
+    },
+    {
+      "id": "screen-recording",
+      "public_name": "screen-recording",
+      "source": "github-awesome-copilot",
+      "source_path": "skills/screen-recording",
+      "selector": "screen-recording",
+      "frontmatter_name": "screen-recording",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/github-awesome-copilot/screen-recording",
+      "restrictions": [
+        "Capture only authorized windows and sanitized test data.",
+        "Review recordings for private or sensitive content before storage."
+      ]
+    },
+    {
+      "id": "next-best-practices",
+      "public_name": "next-best-practices",
+      "source": "vercel-next-skills",
+      "source_path": "skills/next-best-practices",
+      "selector": "next-best-practices",
+      "frontmatter_name": "next-best-practices",
+      "upstream_version": null,
+      "audit_status": "DISABLED",
+      "default_activation": "conditional",
+      "vendor_path": null,
+      "restrictions": [
+        "No license file or license declaration was found in the pinned historical commit.",
+        "Do not route until a human records a valid license decision.",
+        "Upstream removed or split these skills; validate an alternative separately."
+      ]
+    },
+    {
+      "id": "next-cache-components",
+      "public_name": "next-cache-components",
+      "source": "vercel-next-skills",
+      "source_path": "skills/next-cache-components",
+      "selector": "next-cache-components",
+      "frontmatter_name": "next-cache-components",
+      "upstream_version": null,
+      "audit_status": "DISABLED",
+      "default_activation": "conditional",
+      "vendor_path": null,
+      "restrictions": [
+        "No license file or license declaration was found in the pinned historical commit.",
+        "Do not route until a human records a valid license decision.",
+        "Upstream removed or split these skills; validate an alternative separately."
+      ]
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "public_name": "vercel-react-best-practices",
+      "source": "vercel-agent-skills",
+      "source_path": "skills/react-best-practices",
+      "selector": "react-best-practices",
+      "frontmatter_name": "vercel-react-best-practices",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/vercel-agent-skills/vercel-react-best-practices",
+      "restrictions": [
+        "Activate only when the ticket confirms the relevant Vercel/React context.",
+        "Do not create paid resources, change billing, or access production without a human gate."
+      ]
+    },
+    {
+      "id": "web-design-guidelines",
+      "public_name": "web-design-guidelines",
+      "source": "vercel-agent-skills",
+      "source_path": "skills/web-design-guidelines",
+      "selector": "web-design-guidelines",
+      "frontmatter_name": "web-design-guidelines",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/vercel-agent-skills/web-design-guidelines",
+      "restrictions": [
+        "Activate only when the ticket confirms the relevant Vercel/React context.",
+        "Do not create paid resources, change billing, or access production without a human gate."
+      ]
+    },
+    {
+      "id": "vercel-optimize",
+      "public_name": "vercel-optimize",
+      "source": "vercel-agent-skills",
+      "source_path": "skills/vercel-optimize",
+      "selector": "vercel-optimize",
+      "frontmatter_name": "vercel-optimize",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/vercel-agent-skills/vercel-optimize",
+      "restrictions": [
+        "Activate only when the ticket confirms the relevant Vercel/React context.",
+        "Do not create paid resources, change billing, or access production without a human gate."
+      ]
+    },
+    {
+      "id": "audit-context-building",
+      "public_name": "audit-context-building",
+      "source": "trailofbits",
+      "source_path": "plugins/audit-context-building/skills/audit-context-building",
+      "selector": "audit-context-building",
+      "frontmatter_name": "audit-context-building",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/audit-context-building",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "differential-review",
+      "public_name": "differential-review",
+      "source": "trailofbits",
+      "source_path": "plugins/differential-review/skills/differential-review",
+      "selector": "differential-review",
+      "frontmatter_name": "differential-review",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/differential-review",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "property-based-testing",
+      "public_name": "property-based-testing",
+      "source": "trailofbits",
+      "source_path": "plugins/property-based-testing/skills/property-based-testing",
+      "selector": "property-based-testing",
+      "frontmatter_name": "property-based-testing",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/property-based-testing",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "dimensional-analysis",
+      "public_name": "dimensional-analysis",
+      "source": "trailofbits",
+      "source_path": "plugins/dimensional-analysis/skills/dimensional-analysis",
+      "selector": "dimensional-analysis",
+      "frontmatter_name": "dimensional-analysis",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/dimensional-analysis",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "sharp-edges",
+      "public_name": "sharp-edges",
+      "source": "trailofbits",
+      "source_path": "plugins/sharp-edges/skills/sharp-edges",
+      "selector": "sharp-edges",
+      "frontmatter_name": "sharp-edges",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/sharp-edges",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "insecure-defaults",
+      "public_name": "insecure-defaults",
+      "source": "trailofbits",
+      "source_path": "plugins/insecure-defaults/skills/insecure-defaults",
+      "selector": "insecure-defaults",
+      "frontmatter_name": "insecure-defaults",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/insecure-defaults",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "supply-chain-risk-auditor",
+      "public_name": "supply-chain-risk-auditor",
+      "source": "trailofbits",
+      "source_path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
+      "selector": "supply-chain-risk-auditor",
+      "frontmatter_name": "supply-chain-risk-auditor",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/supply-chain-risk-auditor",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "fp-check",
+      "public_name": "fp-check",
+      "source": "trailofbits",
+      "source_path": "plugins/fp-check/skills/fp-check",
+      "selector": "fp-check",
+      "frontmatter_name": "fp-check",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/fp-check",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "variant-analysis",
+      "public_name": "variant-analysis",
+      "source": "trailofbits",
+      "source_path": "plugins/variant-analysis/skills/variant-analysis",
+      "selector": "variant-analysis",
+      "frontmatter_name": "variant-analysis",
+      "upstream_version": null,
+      "audit_status": "APPROVED",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/variant-analysis",
+      "restrictions": [
+        "Preserve CC-BY-SA-4.0 attribution and keep vendor copies unmodified."
+      ]
+    },
+    {
+      "id": "modern-python",
+      "public_name": "modern-python",
+      "source": "trailofbits",
+      "source_path": "plugins/modern-python/skills/modern-python",
+      "selector": "modern-python",
+      "frontmatter_name": "modern-python",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/modern-python",
+      "restrictions": [
+        "Package installation and network access require an explicit ticket step.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "mutation-testing",
+      "public_name": "mutation-testing",
+      "source": "trailofbits",
+      "source_path": "plugins/mutation-testing/skills/mutation-testing",
+      "selector": "mutation-testing",
+      "frontmatter_name": "mutation-testing",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/mutation-testing",
+      "restrictions": [
+        "Run only after the base suite is stable and compute budget is appropriate.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "agentic-actions-auditor",
+      "public_name": "agentic-actions-auditor",
+      "source": "trailofbits",
+      "source_path": "plugins/agentic-actions-auditor/skills/agentic-actions-auditor",
+      "selector": "agentic-actions-auditor",
+      "frontmatter_name": "agentic-actions-auditor",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/agentic-actions-auditor",
+      "restrictions": [
+        "Use only for authorized GitHub Actions workflows; never expose secrets.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "semgrep-rule-creator",
+      "public_name": "semgrep-rule-creator",
+      "source": "trailofbits",
+      "source_path": "plugins/semgrep-rule-creator/skills/semgrep-rule-creator",
+      "selector": "semgrep-rule-creator",
+      "frontmatter_name": "semgrep-rule-creator",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/semgrep-rule-creator",
+      "restrictions": [
+        "Activate only for the rule-authoring purpose named by the skill.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "semgrep-rule-variant-creator",
+      "public_name": "semgrep-rule-variant-creator",
+      "source": "trailofbits",
+      "source_path": "plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator",
+      "selector": "semgrep-rule-variant-creator",
+      "frontmatter_name": "semgrep-rule-variant-creator",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/semgrep-rule-variant-creator",
+      "restrictions": [
+        "Activate only for the rule-authoring purpose named by the skill.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "second-opinion",
+      "public_name": "second-opinion",
+      "source": "trailofbits",
+      "source_path": "plugins/second-opinion/skills/second-opinion",
+      "selector": "second-opinion",
+      "frontmatter_name": "second-opinion",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/trailofbits/second-opinion",
+      "restrictions": [
+        "External model or CLI use requires explicit authorization and a non-sensitive code scope.",
+        "Preserve CC-BY-SA-4.0 attribution."
+      ]
+    },
+    {
+      "id": "static-analysis",
+      "public_name": "static-analysis",
+      "source": "trailofbits",
+      "source_path": "plugins/static-analysis",
+      "selector": "static-analysis",
+      "frontmatter_name": null,
+      "upstream_version": null,
+      "audit_status": "NOT_FOUND",
+      "default_activation": "conditional",
+      "vendor_path": null,
+      "restrictions": [
+        "The selector is a plugin containing codeql, sarif-parsing, and semgrep; no root SKILL.md or frontmatter name static-analysis exists.",
+        "Do not substitute a child skill without human validation."
+      ]
+    },
+    {
+      "id": "skill-improver",
+      "public_name": "skill-improver",
+      "source": "trailofbits",
+      "source_path": "plugins/skill-improver/skills/skill-improver",
+      "selector": "skill-improver",
+      "frontmatter_name": "skill-improver",
+      "upstream_version": null,
+      "audit_status": "DISABLED",
+      "default_activation": "conditional",
+      "vendor_path": null,
+      "restrictions": [
+        "Requires the unavailable plugin-dev/skill-reviewer dependency.",
+        "Automated edit/review hooks are not permitted in ordinary ticket execution."
+      ]
+    },
+    {
+      "id": "hf-cli",
+      "public_name": "hf-cli",
+      "source": "huggingface",
+      "source_path": "skills/hf-cli",
+      "selector": "hf-cli",
+      "frontmatter_name": "hf-cli",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/huggingface/hf-cli",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-datasets",
+      "public_name": "huggingface-datasets",
+      "source": "huggingface",
+      "source_path": "skills/huggingface-datasets",
+      "selector": "huggingface-datasets",
+      "frontmatter_name": "huggingface-datasets",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-datasets",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-trackio",
+      "public_name": "huggingface-trackio",
+      "source": "huggingface",
+      "source_path": "skills/huggingface-trackio",
+      "selector": "huggingface-trackio",
+      "frontmatter_name": "huggingface-trackio",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-trackio",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-vision-trainer",
+      "public_name": "huggingface-vision-trainer",
+      "source": "huggingface",
+      "source_path": "skills/huggingface-vision-trainer",
+      "selector": "huggingface-vision-trainer",
+      "frontmatter_name": "huggingface-vision-trainer",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-vision-trainer",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "hf-mem",
+      "public_name": "hf-mem",
+      "source": "huggingface",
+      "source_path": "skills/hf-mem",
+      "selector": "hf-mem",
+      "frontmatter_name": "hf-mem",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/huggingface/hf-mem",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    },
+    {
+      "id": "huggingface-best",
+      "public_name": "huggingface-best",
+      "source": "huggingface",
+      "source_path": "skills/huggingface-best",
+      "selector": "huggingface-best",
+      "frontmatter_name": "huggingface-best",
+      "upstream_version": null,
+      "audit_status": "APPROVED_WITH_RESTRICTIONS",
+      "default_activation": "conditional",
+      "vendor_path": "vendor/agent-skills/huggingface/huggingface-best",
+      "restrictions": [
+        "Activate only for a technically related Hugging Face ticket.",
+        "No upload, publication, Hub repository mutation, Space, paid Job, or paid GPU without an explicit human gate."
+      ]
+    }
+  ]
+}
+

@@ -28,6 +28,11 @@ Este é o catálogo canônico. `PROJECT_RULEBOOK.md` define precedência; `docs/
 - [Recomendações específicas de automação Jira](governance/JIRA_AUTOMATION_RECOMMENDATIONS.md)
 - [Inconsistências do backlog](governance/BACKLOG_INCONSISTENCY_REPORT.md)
 - [Mudanças propostas para KAN-20](governance/KAN_20_PROPOSED_CHANGES.md)
+- [Auditoria de skills públicas](governance/PUBLIC_SKILLS_AUDIT.md)
+- [Versionamento de skills públicas](governance/PUBLIC_SKILLS_VERSIONING.md)
+- [Decisão de arquitetura de skills](governance/SKILL_ARCHITECTURE_DECISION.md)
+- [Matriz Jira × skills](governance/JIRA_SKILL_ROUTING_MATRIX.md)
+- [Relatório de mapeamento de skills](governance/SKILL_MAPPING_REPORT.md)
 
 ## Desenvolvimento e arquitetura
 
