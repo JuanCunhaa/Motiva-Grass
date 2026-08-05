@@ -22,4 +22,9 @@ O catálogo global e a precedência estão em [`docs/DOCUMENTATION_INDEX.md`](..
 - [Relatório de inconsistências do backlog](BACKLOG_INCONSISTENCY_REPORT.md)
 - [Oportunidades globais de automação](AUTOMATION_OPPORTUNITIES.md)
 
-O Jira não foi alterado durante a produção destes arquivos. As recomendações administrativas dependem de revisão humana e de KAN-89.
+## Registros e evidências
+
+- [Registro factual do bootstrap do repositório](REPOSITORY_BOOTSTRAP_RECORD.md)
+
+Os materiais para revisão acima foram originalmente produzidos sem alteração do
+Jira. As recomendações administrativas dependem de revisão humana e de KAN-89.
